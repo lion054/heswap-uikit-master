@@ -1,0 +1,42 @@
+import { MediaQueries, Breakpoints, Spacing } from "./types";
+export declare const breakpointMap: {
+    [key: string]: number;
+};
+export declare const shadows: {
+    level1: string;
+    active: string;
+    success: string;
+    warning: string;
+    focus: string;
+    inset: string;
+    step: string;
+};
+declare const _default: {
+    siteWidth: number;
+    breakpoints: Breakpoints;
+    mediaQueries: MediaQueries;
+    spacing: Spacing;
+    shadows: {
+        level1: string;
+        active: string;
+        success: string;
+        warning: string;
+        focus: string;
+        inset: string;
+        step: string;
+    };
+    radii: {
+        small: string;
+        default: string;
+        card: string;
+        circle: string;
+    };
+    zIndices: {
+        dropdown: number;
+        modal: number;
+        topBar: number;
+        leftBar: number;
+        menuChevron: number;
+    };
+};
+export default _default;

@@ -1,0 +1,35 @@
+import { AlertTheme } from "../components/Alert/types";
+import { CardTheme } from "../components/Card/types";
+import { LuckyChipToggleTheme } from "../components/LuckyChipToggle/types";
+import { RadioTheme } from "../components/Radio/types";
+import { ToggleTheme } from "../components/Toggle/types";
+import { TooltipTheme } from "../components/Tooltip/types";
+import { ModalTheme } from "../widgets/Modal/types";
+import { Colors, Breakpoints, MediaQueries, Spacing, Shadows, Radii, ZIndices } from "./types";
+
+export interface LuckyChipTheme {
+  siteWidth: number;
+  isDark: boolean;
+  alert: AlertTheme;
+  colors: Colors;
+  card: CardTheme;
+  modal: ModalTheme;
+  luckychipToggle: LuckyChipToggleTheme;
+  radio: RadioTheme;
+  toggle: ToggleTheme;
+  tooltip: TooltipTheme;
+  breakpoints: Breakpoints;
+  mediaQueries: MediaQueries;
+  spacing: Spacing;
+  shadows: Shadows;
+  radii: Radii;
+  zIndices: ZIndices;
+}
+
+export { default as dark } from "./dark";
+export { default as light } from "./light";
+
+export { lightColors } from "./colors";
+export { darkColors } from "./colors";
+
+export type { Colors } from "./types";
